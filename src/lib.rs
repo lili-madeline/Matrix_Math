@@ -224,7 +224,9 @@ mod tests {
     const MATRIX_NON_SQUARE_3: Matrix<f64, 2, 1> = matrix![1.0; 2.0];
 
     #[test]
-    fn test() {}
+    fn transpose() {
+        assert_eq!(MATRIX_NON_SQUARE_2.transpose(), matrix![1.0 4.0; 2.0 5.0; 3.0 6.0]);
+    }
 
     #[test]
     fn debug() {
